@@ -1,0 +1,13 @@
+#include<stdio.h>
+int cal_area_perimeter(float x,float *a,float *b){
+    *a=3.1416*x*x;
+    *b=2*3.1416*x;
+}
+int main(){
+    float a,area,perimeter;
+    printf("Enter the radius :");
+    scanf("%f",&a);
+    cal_area_perimeter(a,&area,&perimeter);
+    printf("The area of circle :%f\nThe perimeter of circle :%.2f",area,perimeter);
+
+}
